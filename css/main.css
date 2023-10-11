@@ -1,0 +1,914 @@
+
+
+body {
+	margin: auto;
+	padding: 0;
+	color: black;
+	
+	background: url(../images/Desktop.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body, th, td, input, textarea, select, option {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p, ul, ol {
+	line-height: 200%;
+}
+
+a {
+	color: blue;
+}
+    
+a:hover {
+	text-decoration: none;
+	color: #ffffff;
+	vertical-align: middle;
+}
+
+/* Header */
+
+#header {
+	width: 300px;
+	height: 98px;
+	background: white url(../images/img02.png) no-repeat;
+}
+
+.main_button:hover img{
+	height: 120px;
+	width: 120px;
+	border: 3px solid blue;
+    border-radius: 25px;
+    background-color: #faf498;
+    box-shadow: 8px 8px 5px #888888;
+}    
+
+.onhoverButton_make_payment:hover{
+	height: 65px;
+	width: 228px;
+}  
+
+.onhoverButtonPRINT:hover{
+	height: 65px;
+	width: 65px;
+}  
+
+.onhoverButton:hover{
+	height: 65px;
+	width: 65px;
+}  
+.onhoverButton_studProfile:hover{
+	height: 110px;
+	width: 110px;
+}
+#close_image:hover img[id="initial"]{
+	
+	display: none;
+	
+}
+
+#close_image:hover img[id="onhover"]{
+	
+	display: block;
+	
+}
+#onhover{
+	display: none;
+}
+
+
+/* STUDENT INFORMATION LABEL DESIGN*/
+.studentInfo {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+    color: blue;
+    width: 300px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+/* SUBMENU*/
+
+#submenu {
+	list-style: none;
+}
+#submenu a {
+	display: block;
+	float: left;
+	width: 150px;
+	text-decoration: none; 
+	text-align: center;
+	letter-spacing: -1px;
+	font-size: 14px;
+    font-weight: bolder;
+	color: #ffcc00;
+	background-color: gray;
+}
+
+#submenu a:hover {
+	background: #9c9c9c;
+	color: white;
+	margin: auto;
+}
+
+#submenu li .active a,
+#submenu li a:focus {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 210;
+    width: 220px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li .active a,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+/* COVER ON POPUP*/
+#cover_POPUP { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	z-index:9999; 
+	width:100%; 
+	height:100%; 
+	display:none; 
+	opacity: .8;
+	background: black;
+} 
+	
+#inputdata_POPUP { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	background: transparent; 
+	z-index:9999; 
+	display:none; 
+	border-radius: 10px;
+	width:100%; 
+	height:100%; 
+} 
+
+/* COVER ON POPUP*/
+.cover_POPUP { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	z-index:9999; 
+	width:100%; 
+	height:100%; 
+	display:none; 
+	opacity: .8;
+	background: black;
+} 
+	
+.inputdata_POPUP { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	background: transparent; 
+	z-index:9999; 
+	display:none; 
+	border-radius: 10px;
+	width:100%; 
+	height:100%; 
+} 
+
+/* SEARCH STUDENT BUTTON*/
+.myButton {
+	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	-webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+	background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+	background-color:#2dabf9;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:8px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:15px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+	background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+	background-color:#0688fa;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* SEARCH STUDENT BUTTON*/
+.ScholarshipList {
+	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	-webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+	background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+	background-color:#2dabf9;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:8px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:black;
+	font-family:Arial;
+	font-size:18px;
+	padding:5px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+	width: 300px;
+}
+.ScholarshipList:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+	background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+	background-color:#0688fa;
+}
+.ScholarshipList:active {
+	position:relative;
+	top:1px;
+}
+
+/* SIDE MENU WITH DROPDOWN*/
+
+#nav_stfn {
+    border:3px solid #3e4547;
+
+    box-shadow:2px 2px 8px #000000;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+#nav_stfn, #nav_stfn ul {
+    list-style:none;
+    padding:0;
+    width:250px;
+}
+#nav_stfn ul {
+    position:relative;
+    z-index:-1;
+}
+#nav_stfn li {
+    position:relative;
+    z-index:0;
+}
+#nav_stfn ul li {
+    margin-top:-39px;
+
+    -moz-transition:  0.4s linear 0.4s;
+    -ms-transition: 0.4s linear 0.4s;
+    -o-transition: 0.4s linear 0.4s;
+    -webkit-transition: 0.4s linear 0.4s;
+    transition: 0.4s linear 0.4s;
+}
+#nav_stfn li a {
+    background-color:#d4d5d8;
+    color:#000;
+    display:block;
+    font-size:16px;
+    font-weight:bold;
+    line-height:39px;
+    outline:0;
+    padding-left:15px;
+    text-decoration:none;
+}
+#nav_stfn li a.sub {
+    background:#d4d5d8 url("../images/down.gif") no-repeat;
+}
+#nav_stfn li a + img {
+    cursor:pointer;
+    display:none;
+    height:28px;
+    left:0;
+    position:absolute;
+    top:0;
+    width:200px;
+}
+#nav_stfn li a img {
+    border-width:0px;
+    height:24px;
+    line-height:28px;
+    margin-right:8px;
+    vertical-align:middle;
+    width:24px;
+}
+#nav_stfn li a:hover {
+    background-color:#bcbdc1;
+}
+#nav_stfn ul li a {
+    background-color:#eee;
+    border-bottom:1px solid #ccc;
+    color:#000;
+    font-size:14px;
+    line-height:38px;
+}
+#nav_stfn ul li a:hover {
+    background-color:#ddd;
+    color:#444;
+}
+
+#nav_stfn ul li a img {
+    border-width:0px;
+    height:8px;
+    line-height:22px;
+    margin-right:5px;
+    vertical-align:middle;
+    width:8px;
+}
+
+#nav_stfn a.sub:focus {
+    background:#bcbdc1;
+    outline:0;
+}
+#nav_stfn a:focus ~ ul li {
+    margin-top:0;
+
+    -moz-transition:  0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linears;
+    -webkit-transition: 0.4s linears;
+    transition: 0.4s linear;
+}
+#nav_stfn a:focus + img, #nav_stfn a:active + img {
+    display:block;
+}
+#nav_stfn a.sub:active {
+    background:#bcbdc1;
+    outline:0;
+}
+#nav_stfn a:active ~ ul li {
+    margin-top:0;
+}
+#nav_stfn ul:hover li {
+    margin-top:0;
+}
+
+/* SEARCH BY DATE*/
+
+	#tfnewsearch{
+		float:right;
+		padding:0px;
+	}
+	.tftextinput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+
+
+/* SubMenu MONTHS */
+
+
+#submenu_MONTH ul {
+	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#submenu_MONTH li {
+	display: inline;
+}
+
+#submenu_MONTH a {
+
+	display: block;
+	float: left;
+	width: 70px;
+	padding-top: 0px; 
+	text-decoration: none; 
+	text-align: center;
+	letter-spacing: -1px;
+	font-size: 14px;
+    font-weight: bolder;
+	color: #ffcc00;
+    background-color: gray;
+}
+
+#submenu_MONTH a:hover {
+	background-color: #a2a2a2;
+	color: white;
+}
+
+#submenu_MONTH .active_MONTH a {
+	background-color: #a2a2a2;
+	color: white;
+}
+
+
+/* SEARCH STUDENT INFORMATION*/
+
+#cover_STUDENTSEARCH { 
+    display:none;     
+	position:fixed; 
+	top:0; 
+	left:0; 
+	background:black; 
+	z-index:5; 
+	width:100%; 
+	height:100%; 
+	opacity: .8;
+} 
+	
+#inputdata_STUDENTSEARCH { 
+    display:none;     
+	position:fixed; 
+	top:0; 
+	left:0; 
+	background: trasparent; 
+	z-index:5;
+	width:100%; 
+	height:100%; 
+} 
+
+
+#searchbox_STUDENTSEARCH
+{
+    background-color: #eaf8fc;
+    background-image: linear-gradient(#fff, #d4e8ec);
+    border-radius: 35px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #c4d9df #a4c3ca #83afb7;            
+    width: 490px;
+    height: 43px;
+    padding: 10px;
+    margin: 10px auto;
+    overflow: hidden; /* Clear floats */
+}
+
+#search_STUDENTSEARCH, 
+#submit_STUDENTSEARCH {
+    float: left;
+}
+
+#search_STUDENTSEARCH {
+    height: 35px;
+    width: 380px;
+    border: 1px solid #a4c3ca;
+    font: normal 13px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 50px 3px 3px 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 18px;  
+    margin-left: 3px;          
+}
+
+
+#submit_STUDENTSEARCH
+{       
+    background-color: #6cbb6b;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    border-radius: 3px 50px 50px 3px;    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+                0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 35px;
+    margin: 5 0 0 10px;
+    padding: 0;
+    width: 90px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit_STUDENTSEARCH:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit_STUDENTSEARCH:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit_STUDENTSEARCH::-moz-focus-inner {
+       border: 0;  /* Small centering fix for Firefox */
+}
+
+/*BUTTON NUMBERS*/
+
+.calc_btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 32px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.calc_btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.calc_btn_pre {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 32px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.calc_btn_pre:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* Time & LogOut Display */
+
+#timedateDisplay{
+    margin: 68px auto;
+    width: 1250px;
+    font-size: 16px;
+} 
+
+#timedateDisplay a{
+    color: black;
+    text-decoration: none;
+}
+
+#timedateDisplay tr{
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+/* POPUP CALLING CLASS*/
+
+.POPUP_cover { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	z-index:9999; 
+	width:100%; 
+	height:100%; 
+	display:none; 
+	opacity: .8;
+	background: black;
+} 
+	
+.POPUP_inputdata { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	background: transparent; 
+	z-index:9999; 
+	display:none; 
+	border-radius: 10px;
+	width:100%; 
+	height:100%; 
+} 
+
+/* COVER ON POPUP FOR ENROL*/
+
+#cover_POPUP_ENROL { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	z-index:9999; 
+	width:100%; 
+	height:100%; 
+	display:none; 
+	opacity: .8;
+	background: black;
+} 
+	
+#inputdata_POPUP_ENROL { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	background: transparent; 
+	z-index:9999; 
+	display:none; 
+	border-radius: 10px;
+	width:100%; 
+	height:100%; 
+} 
+
+/* COVER ON POPUP FOR DELETE*/
+
+#cover_POPUP_DELETE { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	z-index:9999; 
+	width:100%; 
+	height:100%; 
+	display:none; 
+	opacity: .8;
+	background: black;
+} 
+	
+#cover_POPUP_DELETE { 
+	position:fixed; 
+	top:0; 
+	left:0; 
+	background: transparent; 
+	z-index:9999; 
+	display:none; 
+	border-radius: 10px;
+	width:100%; 
+	height:100%; 
+} 
+
+#inputdata_table_edit{
+    
+	border-radius: 20px;
+	-webkit-box-shadow: 0px -2px 13px 4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -2px 13px 4px rgba(0,0,0,0.75);
+	box-shadow: 0px -2px 13px 4px rgba(0,0,0,0.75);
+}
+
+
+
+/* GLOWING TEXT BOX*/
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+/* GLOWINGPASSWORD BOX*/
+
+input[type=password], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=password]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+
+/* TABLE ZEBRA*/
+
+.zebra_stripe tbody tr:nth-child(even) td, .zebra_stripe tbody tr.even td {
+    background:white;
+}
+
+.zebra_stripe tbody tr:nth-child(odd) td, .zebra_stripe tbody tr.odd td {
+    background:#d9f3ff;
+}
+
+.zebra_stripe tbody tr:first-child td 
+{
+   background: #003871;
+   color: white;
+}
+
+.zebra_stripe tbody tr:last-child td 
+{
+   background: #003871;
+   color: white;
+}
+.zebra_stripe td{
+    height: 30px;
+}
+
+
+/* */
+
+.zebra_enrolment_other tbody tr:nth-child(even) td, .zebra_stripe tbody tr.even td {
+    background:white;
+}
+
+.zebra_enrolment_other tbody tr:nth-child(odd) td, .zebra_stripe tbody tr.odd td {
+    background:#fcfead;
+}
+
+.zebra_enrolment_other tbody tr:first-child td 
+{
+   background: #363636;
+   color: white;
+}
+.zebra_enrolment_other tbody tr:last-child td 
+{
+   background: #363636;
+   color: white;
+}
+
+.zebra_enrolment_other td{
+    height: 30px;
+}
+
+/* */
+
+.zebra_enrolment tbody tr:nth-child(even) td, .zebra_stripe tbody tr.even td {
+    background:white;
+}
+
+.zebra_enrolment tbody tr:nth-child(odd) td, .zebra_stripe tbody tr.odd td {
+    background:#fcfead;
+}
+
+.zebra_enrolment tbody tr:first-child td 
+{
+   background: #363636;
+   color: white;
+}
+
+.zebra_enrolment td{
+    height: 30px;
+}
+
+
+/* */
+
+.zebra_obligate tbody tr:nth-child(even) td, .zebra_stripe tbody tr.even td {
+    background:#d0d3ff;
+}
+
+.zebra_obligate tbody tr:nth-child(odd) td, .zebra_stripe tbody tr.odd td {
+    background:white;
+}
+
+.zebra_obligate tbody tr:first-child td 
+{
+   background: #003871;
+   color: white;
+}
+
+.zebra_obligate td{
+    height: 30px;
+}
+
+
+/* TABLE OTHER*/
+
+.zebra_OTHER tbody tr:nth-child(even) td, .zebra_stripe tbody tr.even td {
+    background:white;
+}
+
+.zebra_OTHER tbody tr:nth-child(odd) td, .zebra_stripe tbody tr.odd td {
+    background:#d9f3ff;
+}
+.zebra_OTHER tbody tr:first-child td 
+{
+   color: white;
+   background: #003871;
+}
+.zebra_OTHER tbody tr:nth-child(2) td 
+{
+   color: white;
+   background: #003871;
+}
+.zebra_OTHER tbody tr:last-child td 
+{
+	background: #003871;
+   color: white;
+}
