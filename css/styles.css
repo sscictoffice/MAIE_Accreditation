@@ -1,0 +1,143 @@
+.content{
+	padding-top: 70px;
+}
+.navbar-brand{
+	padding-top: 2px;
+}
+
+/* COVER ON POPUP*/
+.cover_POPUP {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+	width:100%;
+	height:100%;
+	display:none;
+	opacity: .8;
+	background: black;
+}
+
+.inputdata_POPUP {
+	position:fixed;
+	top:0;
+	left:0;
+	background: transparent;
+	z-index:9999;
+	display:none;
+	border-radius: 10px;
+	width:100%;
+	height:100%;
+}
+
+/* TABLE ZEBRA*/
+
+.zebra_stripe tbody tr:nth-child(even) td, .zebra_stripe tbody tr.even td {
+    background:white;
+}
+
+.zebra_stripe tbody tr:nth-child(odd) td, .zebra_stripe tbody tr.odd td {
+    background:#d9f3ff;
+}
+
+.zebra_stripe tbody tr:first-child td
+{
+   background: #003871;
+   color: white;
+}
+
+.zebra_stripe tbody tr:last-child td
+{
+   background: #003871;
+   color: white;
+}
+.zebra_stripe td{
+    height: 30px;
+}
+
+
+/* */
+
+.zebra_enrolment_other tbody tr:nth-child(even) td, .zebra_stripe tbody tr.even td {
+    background:white;
+}
+
+.zebra_enrolment_other tbody tr:nth-child(odd) td, .zebra_stripe tbody tr.odd td {
+    background:#fcfead;
+}
+
+.zebra_enrolment_other tbody tr:first-child td
+{
+   background: #363636;
+   color: white;
+}
+.zebra_enrolment_other tbody tr:last-child td
+{
+   background: #363636;
+   color: white;
+}
+
+.zebra_enrolment_other td{
+    height: 30px;
+}
+
+/* */
+
+.zebra_enrolment tbody tr:nth-child(even) td, .zebra_stripe tbody tr.even td {
+    background:white;
+}
+
+.zebra_enrolment tbody tr:nth-child(odd) td, .zebra_stripe tbody tr.odd td {
+    background:#fcfead;
+}
+
+.zebra_enrolment tbody tr:first-child td
+{
+   background: #363636;
+   color: white;
+}
+
+.zebra_enrolment td{
+    height: 30px;
+}
+
+
+/* */
+
+.zebra_siglakas tbody tr:nth-child(even) td, .zebra_stripe tbody tr.even td {
+    background:#d0d3ff;
+}
+
+.zebra_siglakas tbody tr:nth-child(odd) td, .zebra_stripe tbody tr.odd td {
+    background:white;
+}
+
+.zebra_siglakas td{
+    height: 30px;
+}
+
+
+/* TABLE OTHER*/
+
+.zebra_OTHER tbody tr:nth-child(even) td, .zebra_stripe tbody tr.even td {
+    background:white;
+}
+
+.zebra_OTHER tbody tr:nth-child(odd) td, .zebra_stripe tbody tr.odd td {
+    background:#d9f3ff;
+}
+.zebra_OTHER tbody tr:first-child td
+{
+   color: white;
+   background: #003871;
+}
+.zebra_OTHER tbody tr:nth-child(2) td
+{
+   color: white;
+   background: #003871;
+}
+.zebra_OTHER tbody tr:last-child td
+{
+	background: #003871;
+   color: white;
+}
